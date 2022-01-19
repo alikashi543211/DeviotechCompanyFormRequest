@@ -1,0 +1,58 @@
+body
+{
+	background: #edecec;
+}
+.main_container
+{
+	margin-bottom: 40px;
+}
+.card-box
+{
+	/*padding: 20px;*/
+	background: #daf1c8;
+	margin-bottom: 100px;
+}
+
+.textarea-element
+{
+	resize: none;
+}
+
+.form-label
+{
+	/*font-weight: bold;*/
+}
+
+.upload_document
+{
+	height: 50px;
+}
+
+
+#toast-container > .toast-success {
+         opacity: 1 !important;
+}
+#toast-container > .toast-error {
+    opacity: 1 !important;
+}
+
+
+.accordian_heading
+{
+	text-decoration: none;
+    color: navy;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.text_navy
+{
+	color: navy;
+	font-weight: bold;
+}
+
+.card_body_padding
+{
+	padding: 1.5rem;
+}

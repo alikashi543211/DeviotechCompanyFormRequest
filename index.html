@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Company Formation Request</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        <!-- custom css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    </head>
+    <body>
+
+        <div class="container main_container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center my-5 text_navy">Company Formation Request</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="" class="company-request-form" enctype="multipart/form-data">
+                    <div class="accordion" id="accordionExample">
+                        
+
+                        <!-- First Section -->
+                        <div class="card z-depth-0 bordered">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0 accordian_heading" data-toggle="collapse" data-target="#collapseOne"
+                                  aria-expanded="true" aria-controls="collapseOne">
+                                    Director
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                              data-parent="#accordionExample">
+                              <div class="card-body card_body_padding">
+                                    <div class="row" class="director_section_row" id="director_section_accordian">
+                                        <div class="col-md-12 director_box director_col_main" id="director-1">
+
+                                            <!-- Form Flow Section One -->
+                                            <div class="row" id="form-flow-section-1">
+                                                <div class="col-md-12">
+                                                    <h5 class="text_navy">Director <span class="director_number">1</span></h5>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="text" class="form-label">Name:</label>
+                                                        <input type="text" class="form-control text_only valid-control" id="name" placeholder="Enter name" name="director_name[]">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-0">
+                                                        <label for="text" class="form-label">Date of Birth:</label>
+                                                        <div class="row">
+                                                            <div class="col-md-3 p-0 pr-1 pl-3">
+                                                               <div class="">
+                                                                    <input type="text" class="form-control numeric_value valid-control" maxlength="2" id="day" placeholder="DD" name="director_day[]" autocomplete="off" >
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3 p-0 pr-1">
+                                                               <div class="">
+                                                                    <input type="text" class="form-control numeric_value valid-control" maxlength="2" id="month" placeholder="MM" name="director_month[]" autocomplete="off">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3 p-0 pr-1">
+                                                               <div class="">
+                                                                    <input type="text" class="form-control numeric_value valid-control" maxlength="4" id="year" placeholder="YYYY" name="director_year[]" autocomplete="off">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="invalid-feedback" style="display: block;">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="pps_number" class="form-label">PPS Number:</label>
+                                                        <input type="pps_number" class="form-control valid-control" id="pps_number" placeholder="Enter PPS Number" name="director_pps_number[]">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="address" class="form-label">Address:</label>
+                                                        <input type="text" class="form-control valid-control" id="address" placeholder="Enter address" name="director_address[]">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="nationality" class="form-label">Nationality:</label>
+                                                        <input type="text" class="form-control valid-control" id="nationality" placeholder="Enter nationality" name="director_nationality[]">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="occupation" class="form-label">Occupation:</label>
+                                                        <input type="text" class="form-control valid-control" id="occupation" placeholder="Enter Occupation" name="director_occupation[]">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="other_directorship" class="form-label">Other Directorships:</label>
+                                                        <select class="form-control other_directorship" name="other_directorship[]">
+                                                            <option value="">Select option</option>
+                                                            <option value="1">Yes</option>
+                                                            <option value="0">No</option>
+                                                        </select>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 other_directorship_detail" style="display: none;">
+                                                    <div class="form-group">
+                                                        <label for="other_directorship_detail" class="form-label">Other Directorships details</label>
+                                                        <textarea class="form-control textarea-element valid-control" id="other_directorship_detail" placeholder="Enter other directorship detail" name="director_other_directorship_detail[]" rows="5"></textarea>
+                                                        
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Form Flow Section Two -->
+                                            <div class="row" id="form-flow-section-2">
+                                                <div class="col-md-12">
+                                                    <p>
+                                                        Address verification: <small class="text-danger">Please upload a copy of a bank statement or bill dated within the last three months</small>
+                                                    </p>
+                                                    <div class="form-group">
+                                                        <input type="file" class="input_file" data-is-file="0" id="verificatioon_file" placeholder="Enter email" name="director_verification_file[]" accept="image/*" >
+                                                        <div class="input_file_alert mt-2" style="width:49%;">
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p>
+                                                        ID Card: <small class="text-danger">Please upload a copy of your passport or drivers licence</small>
+                                                    </p>
+                                                    <div class="form-group">
+                                                        <input type="file" class="input_file" data-is-file="0" id="id_card_file" placeholder="Enter email" name="director_id_card_file[]" accept="image/*" >
+                                                        <div class="input_file_alert mt-2" style="width:49%;">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                
+
+                                            </div>
+                                            
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row my-5">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="is_second_director" class="form-label">Is there a 2nd director?</label>
+                                                        <select class="form-control valid-control is_second_director" name="is_second_director">
+                                                            <option value="">Select option</option>
+                                                            <option value="1">Yes</option>
+                                                            <option value="0">No</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    
+                                    <div class="row footer_row">
+                                        <div class="col-md-12 text-right">
+                                            <button type="button" class="btn btn-primary first-section-next-btn">Next</button>
+                                            <button style="display:none;" type="button" class="btn btn-primary first-section-next-to-next-btn" data-toggle="collapse"
+                                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Next</button>
+                                        </div>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Second Section -->
+                        <div class="card z-depth-0 bordered">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0 accordian_heading collapsed accordian_big_tab" data-toggle="collapse"
+                                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Secretary
+                                </h5>
+                            </div>
+
+                            <div id="disabledSectionOne" data-original-id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body card_body_padding">
+                                    <div class="row">
+                                        <div class="col-md-12" class="director_box">
+
+                                            <!-- Form Flow Section One -->
+                                            <div class="row" id="form-flow-section-1">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="" id="secertary_is_first_director" placeholder="Enter name" name="secerty_is_director[]">
+                                                        <label for="secertary_is_first_director" class="form-label">Tick if secretary is 1st director (no need to fill PPS)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="" id="secertary_is_second_director" placeholder="Enter name" name="secerty_is_director[]">
+                                                        <label for="secertary_is_second_director" class="form-label">tick if secretary is 2nd director (no need to fill PPS)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="text" class="form-label">Name:</label>
+                                                        <input type="text" class="form-control text_only valid-control" id="name" placeholder="Enter name" name="secertary_name">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mb-0">
+                                                        <label for="text" class="form-label">Date of Birth:</label>
+                                                        <div class="row">
+                                                            <div class="col-md-3 p-0 pr-1 pl-3">
+                                                               <div class="">
+                                                                    <input type="text" class="form-control numeric_value valid-control" maxlength="2" id="day" placeholder="DD" name="secertary_day" autocomplete="off" >
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3 p-0 pr-1">
+                                                               <div class="">
+                                                                    <input type="text" class="form-control numeric_value valid-control" maxlength="2" id="month" placeholder="MM" name="secertary_month" autocomplete="off">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3 p-0 pr-1">
+                                                               <div class="">
+                                                                    <input type="text" class="form-control numeric_value valid-control" maxlength="4" id="year" placeholder="YYYY" name="secertary_year" autocomplete="off">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="invalid-feedback" style="display: block;">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="address" class="form-label">Address:</label>
+                                                        <input type="text" class="form-control valid-control" id="address" placeholder="Enter address" name="secertary_address">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="nationality" class="form-label">Nationality:</label>
+                                                        <input type="text" class="form-control valid-control" id="nationality" placeholder="Enter nationality" name="secertary_nationality">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="occupation" class="form-label">Occupation:</label>
+                                                        <input type="text" class="form-control valid-control" id="occupation" placeholder="Enter Occupation" name="secertary_occupation">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Form Flow Section Two -->
+                                            <div class="row" id="form-flow-section-2">
+                                                <div class="col-md-12">
+                                                    <p>
+                                                        Address verification: <small class="text-danger">Please upload a copy of a bank statement or bill dated within the last three months</small>
+                                                    </p>
+                                                    <div class="form-group">
+                                                        <input type="file" class="input_file" data-is-file="0" id="verificatioon_file" placeholder="Enter email" name="secertary_verification_file" accept="image/*" >
+                                                        <div class="input_file_alert mt-2" style="width:49%;">
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <p>
+                                                        ID Card: <small class="text-danger">Please upload a copy of your passport or drivers licence</small>
+                                                    </p>
+                                                    <div class="form-group">
+                                                        <input type="file" class="input_file" data-is-file="0" id="id_card_file" placeholder="Enter email" name="secertary_id_card_file" accept="image/*" >
+
+                                                        <div class="input_file_alert mt-2" style="width:49%;">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row footer_row">
+                                        <div class="col-md-12 text-right">
+                                            <button type="button" class="btn btn-primary second-section-next-btn">Next</button>
+                                            <button style="display:none;" type="button" class="btn btn-primary second-section-next-to-next-btn" data-toggle="collapse"
+                                      data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Third Section -->
+                        <div class="card z-depth-0 bordered">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0 accordian_heading collapsed accordian_big_tab" data-toggle="collapse"
+                                      data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    REGISTERED OFFICE ADDRESS
+                                </h5>
+                            </div>
+
+                            <div id="disabledSectionTwo"  class="collapse" data-original-id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body card_body_padding">
+                                    <div class="row">
+                                        <div class="col-md-12" class="director_box">
+
+                                            <!-- Form Flow Section One -->
+                                            <div class="row" id="form-flow-section-1">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="text" class="form-label">TRADING ADDRESS:</label>
+                                                        <input type="text" class="form-control valid-control trading_address" id="trading_address" placeholder="Enter trading address" name="trading_address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="text" class="form-label">MAIN ACTIVITY OF THE COMPANY:</label>
+                                                        <input type="text" class="form-control valid-control trading_address" id="main_company_activity" placeholder="Enter main activity of company" name="main_company_activity">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="pps_number" class="form-label">PROPOSED NAME:<small class="text-danger"> (We will check availability) </small></label>
+                                                        <input type="pps_number" class="form-control valid-control" id="pps_number" placeholder="Enter proposed name" name="pps_number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="row footer_row">
+                                        <div class="col-md-12 text-right">
+                                            <button type="button" class="btn btn-primary third-section-next-btn">Next</button>
+                                            <button style="display:none;" type="button" class="btn btn-primary third-section-next-to-next-btn" data-toggle="collapse"
+                                      data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <!-- Fourth Section -->
+                        <div class="card z-depth-0 bordered">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0 accordian_heading collapsed accordian_big_tab" data-toggle="collapse"
+                                      data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    MEMBERS / BENEFICIAL OWNERS
+                                </h5>
+                            </div>
+
+                            <div id="disabledSectionThree"  class="collapse" data-original-id="collapseFive" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body card_body_padding">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="pps_number" class="form-label">Owner Name:</label>
+                                                <input type="pps_number" class="form-control valid-control" id="owner_name" placeholder="Enter owner name" name="owner_name">
+                                                
+                                            </div>
+                                            <div class="col-md-6">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row footer_row">
+                                        <div class="col-md-12 text-right">
+                                            <button type="button" class="btn btn-primary fourth-section-next-btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <!-- Jquery Validator Plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+        
+        <!-- custom css -->
+        <script src="assets/js/custom.js"></script>
+
+        <script>
+            onClickFirstSectionSubmit();
+            onClickSecondSectionSubmit();
+            onClickThirdSectionSubmit();
+            onClickFourthSectionSubmit();
+
+            textOnly();
+            onlyNumericValue();
+            onChangeDirectorshipOption();
+            onChangeIsSecondDirector();
+            onFileChange();
+            
+        </script>
+    </body>
+</html>
